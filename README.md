@@ -1,8 +1,8 @@
 # thesada-fw
 
-Firmware for the Thesada property monitoring platform.
+Custom firmware for Thesada property monitoring nodes.
 
-Built with PlatformIO and the Arduino framework for ESP32-S3.
+Built on C++17 / Arduino framework / PlatformIO. Module Registry + Event Bus architecture with embedded Lua scripting.
 
 ## Licence
 
@@ -10,10 +10,12 @@ SPDX-License-Identifier: GPL-3.0-only
 
 ## Structure
 
-- [`examples/hello-world/`](examples/hello-world/) — Minimal PlatformIO project to verify toolchain
-- [`base/`](base/) — Shared base firmware (coming soon)
+See [thesada.cloud/firmware](https://thesada.cloud/firmware) for full architecture documentation.
 
-## Requirements
+## Quick Start
 
-- [PlatformIO](https://platformio.org/) CLI or IDE extension
-- ESP32-S3 board (LILYGO T-SIM7080-S3 or compatible)
+1. Copy `data/config.json` and fill in your values
+2. Edit `config.h` to enable required modules
+3. `pio run -e esp32dev` — compile
+4. `pio run -e esp32dev --target upload` — flash
+5. `pio run -e esp32dev --target uploadfs` — upload LittleFS (config + scripts)
