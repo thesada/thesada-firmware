@@ -5,9 +5,9 @@
 // --- Module enables ---
 // Uncomment to enable a module
 #define ENABLE_TEMPERATURE
-// #define ENABLE_CURRENT
-// #define ENABLE_PWM
-// #define ENABLE_CELLULAR
+#define ENABLE_CURRENT
+#define ENABLE_PWM
+#define ENABLE_CELLULAR
 
 // --- Board ---
 // #define BOARD_LILYGO_T_SIM7080_S3

@@ -1,0 +1,38 @@
+{
+  "device": {
+    "name": "thesada-node",
+    "friendly_name": "Thesada Node"
+  },
+  "wifi": {
+    "ssid": "your-ssid",
+    "password": "your-password"
+  },
+  "mqtt": {
+    "broker": "mqtt.example.com",
+    "port": 1883,
+    "user": "mqtt-user",
+    "password": "mqtt-password",
+    "topic_prefix": "thesada/node"
+  },
+  "temperature": {
+    "pin": 4,
+    "interval_s": 60,
+    "auto_discover": true,
+    "sensors": [
+      {
+        "address": "FFFFFFFFFFFFFFFF",
+        "name": "sensor_placeholder"
+      }
+    ]
+  },
+  "current": {
+    "alert_zero_supply_min_c": 25.0,
+    "heating_season_months": [9,10,11,12,1,2,3,4,5]
+  },
+  "pwm": {
+    "pin": 16,
+    "frequency_hz": 25000,
+    "channel": 0,
+    "resolution": 8
+  }
+}

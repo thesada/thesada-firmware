@@ -9,5 +9,5 @@ public:
   static void load();
   static JsonObject get();
 private:
-  static StaticJsonDocument<2048> _doc;
+  static JsonDocument _doc;
 };

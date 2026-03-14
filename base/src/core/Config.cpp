@@ -3,7 +3,7 @@
 #include "Config.h"
 #include <LittleFS.h>
 
-StaticJsonDocument<2048> Config::_doc;
+JsonDocument Config::_doc;
 
 void Config::load() {
   if (!LittleFS.begin()) return;
